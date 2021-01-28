@@ -61,7 +61,7 @@ class Game{
             var index = 0;
 
             camera.position.x = player1.body.x/2-600;
-            camera.position.y = invisibleObject.y;
+            camera.position.y = player1.body.y;
         
             
             sound();
