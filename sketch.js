@@ -180,7 +180,7 @@ function draw(){
     Engine.update(engine);
     drawSprites();
 
-    if(playerCount === 6){
+    if(playerCount === 4){
       game.update(1);
     }
     if(gameState === 1){
@@ -188,15 +188,9 @@ function draw(){
     }
 
    
-    camera.zoom = 0.64+c;
+    camera.zoom = 0.36;
 
-    if(keyDown("SHIFT")&&keyDown("5")){
-      c = c+0.008;
-    }
 
-    if(keyDown("SHIFT")&&keyDown("6")){
-      c = c-0.008;
-    }
 
 
   }
